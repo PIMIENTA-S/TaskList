@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;600&family=Space+Mono&display=swap');
+
+:root {
+    --primario: #A5C882;
+    --secundario: #D33F49;
+    --claro: #fff;
+    --oscuro: #000;
+    --completado: #e7e7e7;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--completado);
+}
+
+*:first-letter
+{
+    text-transform: capitalize;
+}
+
+.Rborder
+{
+    border-radius: 5px;
+}
+
+.lista
+{
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--claro);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateIzq
+{
+    display: flex;
+    align-items: center;
+}
+
+#dia
+{
+    font-size: 50px;
+}
+
+#diaSemana
+{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dia, #mes, #diaSemana
+{
+    font-weight: bold;
+}
+
+.fecha
+{
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form
+{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input
+{
+    border: none;
+    padding-left: 10px;
+    background-color: var(--completado);
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.addTaskButton, .orderButton
+{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton
+{
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--completado);
+}
+
+.orderButton
+{
+    background-color: var(--secundario);
+    color: var(--claro);
+}
+
+.task
+{
+    background-color: var(--primario);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--claro);
+    cursor: pointer;
+}
+
+.done
+{
+    background-color: var(--completado);
+    color: var(--oscuro);
+    text-decoration: line-through;
+}

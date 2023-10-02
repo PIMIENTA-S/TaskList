@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="lista Rborder">
+        <div class="date">
+            <div class="dateIzq">
+                <div id="dia"></div>
+                <div class="fecha">
+                    <div id="mes"></div>
+                    <div id="año"></div>
+                </div>
+            </div>
+            <div id="diaSemana"></div>
+        </div>
+        <form onsubmit="addNewTask(event)">
+            <input type="text" name="taskText" placeholder="Nueva tarea" autocomplete="off" class="Rborder">
+            <button type="submit" class="addTaskButton">+</button>
+            <button type="button" class="orderButton Rborder" onclick="orderedTask()">Ordenar</button>
+        </form>
+        <div id="taskContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
